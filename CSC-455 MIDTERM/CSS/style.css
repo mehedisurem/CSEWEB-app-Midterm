@@ -1,0 +1,384 @@
+body{
+    background: #1E2B31;
+}
+.redText{
+    color: #f9004d;  
+}
+            /* Header-Part Css */
+.Header-Part{
+    margin: 0vh 5vw 5vh 5vw;
+    height: 70vh; 
+    display: grid;
+    grid-template-columns: 50vw 38vw;
+    grid-template-rows: .5fr 5fr ;
+    grid-template-areas: "Header-Navbar Header-Navbar"
+                        "Content-text header-img";
+                       
+    /* grid-gap: .3rem; */
+}
+.navbar-brand{
+    color: #ffffff;
+}
+header b{
+    font-family:  'Playball', cursive;
+    font-size: 2.5rem;
+    padding:0vw 3vw ;
+}
+header .Header-Navbar{
+    grid-area: Header-Navbar;
+
+}
+header .navbar-nav .nav-link{ 
+    text-align: center;
+    color: #ffffff;
+    padding:0vw 2vw;
+    /* font-family: 'Coiny', cursive; */
+    font-family: 'Bayon', sans-serif;
+    font-size: 1rem;
+    
+}
+header .navbar-nav .dropdown-menu{
+    background-color: #1E2B31;
+    
+}
+header .dropdown-item{
+    color: white;
+}
+header .dropdown-item:hover{
+    background-color: rgba(235, 243, 8, 0.812);
+    color: #1E2B31;
+
+}
+header .Content-text{
+    /* background: #67466F; */
+    color: #ffffff;
+    grid-area:Content-text;
+    padding: 10vh 11vw;
+    
+}
+.Content-text h1{
+    font-size: 60px;
+    
+}.Content-text p{
+    font-size: 20px;
+    padding-top: 2vh;
+    opacity: .8;   
+}
+header .header-img{
+    /* background: #3C8DBC; */
+    grid-area:header-img;
+    padding: 3vh 8vw; /*Top&bottom ,R&L */
+    height: 62vh;
+    width: 40vw;
+} 
+.header-img img{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+            /* About me Section Css */
+
+.About-me{
+    margin: 3vw 7vw 4vw 7vw;
+    height: 70vh; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:  4fr ;
+     grid-template-areas:"Content1 Content2"; 
+    grid-gap: 2px;
+}
+
+.Content1{
+    /* background: #A1B4C2; */
+     grid-area: Content1;
+     height: 50vh;
+   
+    padding: 15vh 3vw; 
+}
+.Content1 h2{
+    text-align: center;
+    font-size: 30px;
+    color: #ffffff;
+}
+.Content1 p{
+    text-align: center;
+    font-size: 20px;
+    color: #ffffff;
+    line-height: 2;
+}
+.Content1 h3{
+    text-align: center;
+    font-size: 20px;
+    color: #d63031;
+    line-height: 2;
+}
+.About-me .Content2{
+    /* background: #fab1a0; */
+    color: #ffffff;
+    width: 43vw;
+    height: 50vh;
+    margin:2vh 2vw;
+    padding: 5vh 8vw;
+
+}
+.Content2 h2{
+    text-align: center;
+    font-size: 40px;
+    color: #e30b0b;
+}
+.Content2 i b p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 1;
+    color: aqua;
+
+    
+}
+.Content2 p{
+    text-align: center;
+    font-size: 20px;
+    line-height: 2;
+    color: #ffffff;
+
+    
+}
+.Content2 button{
+    background-color: hsl(19, 95%, 50%);
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    
+    text-decoration: none;
+    display: inline-block;
+    display: flex;
+    align-self: center;
+    font-size: 16px;
+    margin: 3vh 10vw;
+    cursor: pointer;
+}
+
+        /* SkillDetails Section Css */
+
+
+
+            /* projectDisplay Section Css */
+
+.projectDisplay{
+    margin: 3vh 7vw 9vh 7vw;
+    height: 150vh; 
+    padding: 2vw 2vw 2vw 2vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 2fr 6fr 6fr ;
+    grid-template-areas:"heading heading heading"
+                        "project1 project2 project3"
+                        "project4 project5 project6";                        
+    grid-gap: 2px;
+}
+
+.heading{
+	text-align: center;
+    grid-area: heading;
+    
+}
+.heading h2{
+	font-size: 30px;
+	font-weight: 500;
+	margin: 7px 0px 20px;
+	line-height: 1.1;
+    color: #ffffff;
+}
+.heading h1{
+	color: red;
+	font-size: 40px;
+	font-weight: 500;
+    font-family:  'Playball', cursive;
+}
+.heading p{
+	font-size: 25px;
+	color: #eaed2a;
+	line-height: 2;
+    /* font-family:  'Playball', cursive; */
+}
+.projectDisplay p{
+    
+    font-size: 18px;
+    padding-top: 2vh;
+    line-height: 2;   
+
+}
+.projectDisplay img{
+max-width: 100%;
+max-height: 100%;
+}
+.card{
+    background: transparent;
+    color: #ffffff;
+}
+.project1{
+margin: 2vh 2vw;
+padding: 10%;
+    /* background:#ff7675 ; */
+    height: auto;
+ grid-area:project1; 
+}
+.project2{
+margin: 2vh 2vw;
+padding: 10%;
+height: auto;
+
+/* background:#00cec9 ; */
+ grid-area:project2; 
+}
+.project3{
+margin: 2vh 2vw;
+padding: 10%;
+
+height: auto;
+ grid-area:project3; 
+}
+.project4{
+margin: 2vh 2vw;
+padding: 10%;
+
+height: auto;
+ grid-area:project4; 
+}
+.project5{
+    margin: 2vh 2vw;
+    padding: 10%;
+    
+    height: auto;
+     grid-area:project5; 
+    }
+    .project6{
+    margin: 2vh 2vw;
+    padding: 10%;
+
+    height: auto;
+     grid-area:project6; 
+    }
+.btn{
+    border:0ch;
+    border-radius: 10px;
+    background: #e30b0b;
+    color: #ffffff;
+}
+.btn:hover{
+    
+    background: #f6f205;
+    color: black;
+}
+footer{
+    margin: 10vh 0;
+} 
+
+ @media screen and (max-width: 1025px){
+    .Header-Part{
+        margin: 0vh 5vw 5vh 5vw;
+        height: 80vh;
+        grid-template-columns: 50vw 38vw ;
+        grid-template-rows: .5fr 5fr;
+        grid-gap: 2px; 
+        grid-template-areas: "Header-Navbar Header-Navbar"
+                            "Content-text header-img"; 
+    }
+    header b{
+        
+        font-size: 1.9rem;
+        padding:0vw 3vw;
+    }
+    .navbar-nav{
+        font-size: .6rem;
+        padding: 0vh 0vw;
+
+    }
+    header .Content-text{
+        padding: 9vh 9vw;
+        
+    }
+    .Content-text h1{
+        font-size: 45px;
+        
+    }.Content-text p{
+        font-size: 18px;
+        padding-top: 2vh;
+        opacity: .8;   
+    }
+}  
+ 
+ 
+@media screen and (max-width: 950px){
+    
+    .Header-Part{
+         margin: 0vh 3vw 2vh 3vw;  
+
+        height: 135vh;
+        grid-template-columns: 1fr  ;
+        grid-template-rows: .5fr 5fr 5fr  ;
+        grid-gap: 5px; 
+        grid-template-areas: "Header-Navbar"
+                            "Content-text"
+                            "header-img"; 
+    }
+    header b{
+        
+        font-size: 1.7rem;
+        padding:0vw 2vw;
+    }
+    .nav-item{
+        font-size: 1.1rem;
+        padding:0vw 1vw;
+    }
+    header .header-img{  
+       
+        padding: 0vh 3vw;      
+        height: auto;
+        width: auto;
+    } 
+    .header-img img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    header .Content-text{
+        padding: auto;      
+    }
+
+    .About-me{
+        margin: 4vh 6vw 8vh 6vw;
+        height: auto; 
+        grid-template-columns: 1fr;
+        grid-template-rows:  4fr 4fr ;
+        grid-gap: 5px; 
+        grid-template-areas:"Content1"
+                            "Content2";
+                             
+    }
+    .About-me .Content2{
+     
+        color: #ffffff;
+        width: 90vw;
+        height: auto;
+        margin:2vh 2vw;
+        padding: 5vh 8vw;
+
+        
+    }
+
+
+    .projectDisplay{
+        margin: 4vh 6vw 2vh 6vw;
+        height: auto;
+        grid-template-columns: 1fr  ;
+        grid-template-rows:  1fr 2fr 2fr 2fr 2fr 2fr 2fr;
+        grid-gap: 5px;
+        grid-template-areas:"heading" 
+                            "project1"
+                            "project2"
+                            "project3"
+                            "project4" 
+                            "project5" 
+                            "project6"; 
+    }
+
+}
